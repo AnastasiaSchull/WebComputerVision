@@ -1,0 +1,95 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    font-size: 15px;
+    background-color: #eee5f6;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #f6f3f8;
+}
+
+th, td {
+    border: 1px solid #8b6af6;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    color: #8b6af6;
+}
+
+.table-container {
+    margin-right: 20px;
+    background-color: #eee5f6;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sort-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    width: 25%;
+    margin-left: 15px;
+    border: 1px solid #8b6af6;
+    background-color: #f6f3f8;
+    !important;
+}
+/*контейнер для элементов фильтрации*/
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* отступы между элементами */
+    margin-bottom: 20px;
+    border: 1px solid #8b6af6;
+    background-color: #f6f3f8;
+    !important;
+}
+
+    .filters-container h3 {
+        margin: 10px 0;
+        color: #8b6af6;
+    }
+
+.filters-group {
+    display: flex;
+    flex-direction: column; /* расположение элементов внутри группы в столбик */
+}
+
+.filters-container label {
+    display: block;
+    margin: 5px 0;
+}

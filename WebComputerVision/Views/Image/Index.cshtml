@@ -1,0 +1,19 @@
+﻿@model WebComputerVision.Models.ImageResult
+
+@{
+    ViewData["Title"] = "Image Page";
+}
+
+<div class="text-center class=">
+    <h1 class="display-4">Welcome to Image Text Extractor</h1>
+    <p>Upload your image to extract text using Azure Computer Vision.</p>
+    <form asp-controller="Image" asp-action="Upload" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file">Select an image file</label>
+            <input type="file" class="form-control-file" id="file" name="image" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload Image</button>
+    </form>
+
+    <p>Learn about <a href="https://learn.microsoft.com/en-us/azure/ai-services/Computer-vision/quickstarts-sdk/client-library?pivots=programming-language-csharp&tabs=windows%2Cvisual-studio">building Web apps with ASP.NET Core</a>.</p>
+</div>
